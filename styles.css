@@ -54,14 +54,22 @@ body {
 }
 
 .nav-logo {
-    height: 40px;
-    width: auto;
+    width: 34px;
+    height: 34px;
 }
 
 .nav-brand h1 {
-    font-size: 1.5rem;
-    color: var(--primary-color);
-    font-weight: 600;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+}
+
+.nav-brand h1 .brand-screen {
+    color: #0f2b4a;
+}
+
+.nav-brand h1 .brand-pulse {
+    color: #2ab5a0;
 }
 
 .nav-links {
