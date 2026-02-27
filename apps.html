@@ -93,9 +93,40 @@
             margin-left: 0.5rem;
             vertical-align: middle;
         }
+        /* Coming Soon overlay */
+        .coming-soon-card {
+            position: relative;
+        }
+        .coming-soon-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.82);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+            pointer-events: none;
+        }
+        .coming-soon-overlay span {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: rgba(37, 99, 235, 0.55);
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .coming-soon-card .app-links {
+            position: relative;
+            z-index: 2;
+        }
         @media (max-width: 600px) {
             .app-card { flex-direction: column; gap: 1.25rem; }
             .app-logo { width: 80px; height: 80px; }
+            .coming-soon-overlay span { font-size: 1.5rem; }
         }
     </style>
 </head>
@@ -103,6 +134,7 @@
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
+                <img src="favicon.svg" alt="Screen Pulse logo" class="nav-logo">
                 <h1>Screen Pulse</h1>
             </div>
             <ul class="nav-links">
@@ -126,13 +158,13 @@
         <section class="apps-content">
             <div class="container">
 
-                <!-- Ibadah Lock -->
+                <!-- Ibadah Focus -->
                 <div class="app-card" id="ibadah-lock">
-                    <img src="images/ibadah-lock.png" alt="Ibadah Lock app icon" class="app-logo" />
+                    <img src="images/ibadah-lock.png" alt="Ibadah Focus app icon" class="app-logo" />
                     <div class="app-info">
-                        <h3>Ibadah Lock</h3>
+                        <h3>Ibadah Focus</h3>
                         <div class="app-tagline">Your worship unlocks your phone.</div>
-                        <p>Ibadah Lock flips the script on screen time. Complete your daily prayers and spiritual habits first — then your phone opens. It's accountability you can actually feel, built for Muslims who want their deen to come before their screen.</p>
+                        <p>Ibadah Focus flips the script on screen time. Complete your daily prayers and spiritual habits first — then your phone opens. It's accountability you can actually feel, built for Muslims who want their deen to come before their screen.</p>
                         <div class="app-features">
                             <span class="app-feature-tag">Prayer Tracking</span>
                             <span class="app-feature-tag">App Blocking</span>
@@ -148,7 +180,8 @@
                 </div>
 
                 <!-- Ru'ya -->
-                <div class="app-card" id="ruya">
+                <div class="app-card coming-soon-card" id="ruya">
+                    <div class="coming-soon-overlay"><span>Coming Soon</span></div>
                     <img src="images/ruya.png" alt="Ru'ya app icon" class="app-logo" />
                     <div class="app-info">
                         <h3>Ru'ya — Islamic Dream Interpretation</h3>
@@ -170,10 +203,11 @@
                 </div>
 
                 <!-- Drop the Receipts -->
-                <div class="app-card" id="drop-the-receipts">
+                <div class="app-card coming-soon-card" id="drop-the-receipts">
+                    <div class="coming-soon-overlay"><span>Coming Soon</span></div>
                     <img src="images/drop-the-receipts.png" alt="Drop the Receipts app icon" class="app-logo" />
                     <div class="app-info">
-                        <h3>Drop the Receipts <span class="badge-coming-soon">Coming Soon</span></h3>
+                        <h3>Drop the Receipts</h3>
                         <div class="app-tagline">Stop arguing. Let the AI decide.</div>
                         <p>Drop the Receipts is a brutally honest AI argument judge. Describe the fight or upload your chat screenshots, and the AI reads the situation, picks a winner, and explains exactly why — no therapy-speak, no fence-sitting. A verdict. Share the result and end the debate for good.</p>
                         <div class="app-features">
