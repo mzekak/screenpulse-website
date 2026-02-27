@@ -54,9 +54,8 @@ body {
 }
 
 .nav-logo {
-    width: 32px;
-    height: 32px;
-    border-radius: 7px;
+    height: 40px;
+    width: auto;
 }
 
 .nav-brand h1 {
