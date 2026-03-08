@@ -219,10 +219,6 @@ body {
 }
 
 .value-icon {
-    font-size: 2.5rem;
-    margin-bottom: 1.25rem;
-    line-height: 1;
-    display: inline-block;
     background: var(--teal-light);
     width: 72px;
     height: 72px;
